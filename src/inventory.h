@@ -17,8 +17,6 @@ public:
     void deleteItem(string name);
     void saveData(const string& path) const;
     void loadData(const string& path);
-    void deleteAllData();
-
 };
 
 #endif
