@@ -30,3 +30,26 @@
 *.exe
 *.out
 *.app
+
+# VS Code folder
+.vscode/
+
+# Windows thumbnail cache
+Thumbs.db
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Backup files
+*~
+*.bak
+
+# Log files
+*.log
+
+# Output binary folder
+bin/
+build/
