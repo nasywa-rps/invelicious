@@ -13,6 +13,7 @@ public:
     void addItem(const Item& item);
     void displayItem() const;
     void deductStock(string name, double amount);
+    void addStock(string name, double amount);
     void deleteItem(string name);
     void saveData(const string& path) const;
     void loadData(const string& path);

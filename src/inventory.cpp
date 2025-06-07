@@ -33,6 +33,18 @@ void Inventory::deductStock(string name, double amount) {
     cout << "Item not found.\n";
 }
 
+void Inventory::addStock(string name, double amount) {
+    for (auto& item : items) {
+        if (item.getName() == name) {
+            item.addAmount(amount);
+            cout << name << "'s stock has been added.\n";
+            return;
+        }
+    }
+    std::cout << "Item tidak ditemukan di inventory.\n";
+}
+
+
 void Inventory::deleteItem(string name) {
     for (auto it = items.begin(); it != items.end(); ++it) {
         if (it->getName() == name) {

@@ -16,6 +16,7 @@ public:
     string getUnit() const;
     double getAmount() const;
     void subtractAmount(double subtract);
+    void addAmount(double add);
     void setAmount(double newAmount);
 };
 

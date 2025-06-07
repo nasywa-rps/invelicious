@@ -21,6 +21,10 @@ void Item::subtractAmount(double subtract) {
     else amount -= subtract;
 }
 
+void Item::addAmount(double add) {
+    amount += add;
+}
+
 void Item::setAmount(double newAmount) {
     amount = newAmount;
 }

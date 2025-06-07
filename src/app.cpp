@@ -9,7 +9,8 @@ void App::displayMenu() {
     cout << "2. View stock list\n";
     cout << "3. Report usage\n";
     cout << "4. Delete item\n";
-    cout << "5. Exit\n";
+    cout << "5. Add stock to an existing item\n";
+    cout << "6. Exit\n";
     cout << "What do you want to do: ";
 }
 
@@ -68,7 +69,22 @@ void App::runApp() {
                 break;
             }
 
-            case 5:
+            case 5: {
+                string name;
+                double amount;
+
+                cout << "Input the item that you want to add: ";
+                getline(cin, name);
+                cout << "Amount added: ";
+                cin >> amount;
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+                inventory.addStock(name, amount);
+                inventory.saveData("data.txt");
+                break;
+            }
+
+            case 6:
                 cout << "Thank you for using Invelicious!\n";
                 break;
                 
@@ -78,5 +94,5 @@ void App::runApp() {
 
         cout << endl;
 
-    } while (opt != 5);
+    } while (opt != 6);
 }
