@@ -1,0 +1,3 @@
+egg;kg;2
+dairy milk;liter;3
+butter;pack(s);3
